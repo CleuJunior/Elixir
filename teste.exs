@@ -4,8 +4,15 @@ defmodule MainModule do
 
   alias MainModule.Math, as: MyMath
 
+
   def helloWorld do
     inspect(MyMath.sum(3, 7))
+  end
+
+  def exibe_par(number) do
+    require Integer
+    puts("O número #{number} é par? #{Intege.is_even(number)}")
+
   end
 
   def inspect(param) do
