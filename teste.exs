@@ -1,8 +1,11 @@
 defmodule MainModule do
   import IO, only: [puts: 1]
   import Kernel, except: [inspect: 1]
+
+  alias MainModule.Math, as: MyMath
+
   def helloWorld do
-    inspect("Hello World!")
+    inspect(MyMath.sum(3, 7))
   end
 
   def inspect(param) do
